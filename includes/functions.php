@@ -54,7 +54,7 @@ function turlobinks_enqueue_jquery_turbolinks() {
 
 	wp_enqueue_script(
 		'jquery-turbolinks',
-		plugins_url( '/js/jquery.turbolinks.js' , __FILE__ ),
+		plugins_url( '/js/jquery.turbolinks.js' , dirname( __FILE__ ) ),
 		array( 'jquery' ),
 		null,
 		false
