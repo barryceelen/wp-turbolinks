@@ -1,14 +1,13 @@
 <?php
 /**
- * @package   Turbolinks
+ * @package   Turlobinks
  * @author    Barry Ceelen <b@rryceelen.com>
  * @license   GPL-2.0+
  * @link      https://github.com/barryceelen/wp-turlobinks
  * @copyright 2016 Barry Ceelen
  *
  * @wordpress-plugin
- * Plugin Name: Turbolinks
- * Plugin Name: Turbolinks
+ * Plugin Name: Turlobinks
  * Plugin URI:  https://github.com/barryceelen/wp-turlobinks
  * Description: Use turbolinks for faster page loads.
  * Version:     0.0.1
@@ -28,5 +27,6 @@ if ( ! defined( 'WPINC' ) ) {
 if ( ! is_admin() ) {
 	require_once( 'includes/functions.php' );
 	add_action( 'template_redirect', 'turlobinks_add_xhr_location' );
-	add_action( 'wp_enqueue_scripts', 'turlobinks_enqueue_scripts', 999 );
+	add_action( 'wp_enqueue_scripts', 'turlobinks_enqueue_jquery_turbolinks', 0 );
+	add_action( 'wp_enqueue_scripts', 'turlobinks_enqueue_turbolinks', 999 );
 }

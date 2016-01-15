@@ -40,34 +40,39 @@ function turlobinks_self_url() {
 }
 
 /**
- * Enqueue scripts.
+ * Enqueue jQuery Turbolinks.
  *
  * @since 0.0.1
  *
- * @todo Check what's what with jquery.turbolinks
  * @todo Load minified file(s)
  *
  * @see wp_enqueue_script()
  * @see wp_register_script()
  * @see plugins_url()
  */
-function turlobinks_enqueue_scripts() {
+function turlobinks_enqueue_jquery_turbolinks() {
 
-	// wp_register_script(
-	// 	'turbolinks',
-	// 	plugins_url( '/js/turbolinks.js' , __FILE__ ),
-	// 	false,
-	// 	null,
-	// 	false
-	// );
+	wp_enqueue_script(
+		'jquery-turbolinks',
+		plugins_url( '/js/jquery.turbolinks.js' , __FILE__ ),
+		array( 'jquery' ),
+		null,
+		false
+	);
+}
 
-	// wp_enqueue_script(
-	// 	'jquery-turbolinks',
-	// 	plugins_url( '/js/jquery.turbolinks.js' , __FILE__ ),
-	// 	array( 'jquery', 'turbolinks' ),
-	// 	null,
-	// 	false
-	// );
+/**
+ * Enqueue Turbolinks.
+ *
+ * @since 0.0.1
+ *
+ * @todo Load minified file(s)
+ *
+ * @see wp_enqueue_script()
+ * @see wp_register_script()
+ * @see plugins_url()
+ */
+function turlobinks_enqueue_turbolinks() {
 
 	wp_enqueue_script(
 		'turbolinks',
