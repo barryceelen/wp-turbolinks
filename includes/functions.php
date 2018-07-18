@@ -15,7 +15,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
- * Add header.
+ * Add location header.
  *
  * @since 0.0.1
  */
