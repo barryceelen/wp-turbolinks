@@ -6,7 +6,6 @@
  * @link      https://github.com/barryceelen/wp-turlobinks
  * @copyright 2016 Barry Ceelen
  *
- * @wordpress-plugin
  * Plugin Name: Turlobinks
  * Plugin URI:  https://github.com/barryceelen/wp-turlobinks
  * Description: Use turbolinks for faster page loads.
