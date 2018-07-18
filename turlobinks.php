@@ -9,7 +9,7 @@
  * Plugin Name: Turlobinks
  * Plugin URI:  https://github.com/barryceelen/wp-turlobinks
  * Description: Use turbolinks for faster page loads.
- * Version:     0.0.1
+ * Version:     0.0.2
  * Author:      Barry Ceelen
  * Author URI:  https://github.com/barryceelen
  * Text Domain: turbolinks
