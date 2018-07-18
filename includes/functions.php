@@ -14,6 +14,12 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+// Add location header.
+add_action( 'template_redirect', 'turlobinks_add_location_header' );
+
+// Enqueue Turbolinks.
+add_action( 'wp_enqueue_scripts', 'turlobinks_enqueue_script', 9 );
+
 /**
  * Add location header.
  *
