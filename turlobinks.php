@@ -26,6 +26,6 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! is_admin() ) {
 	require_once( 'includes/functions.php' );
-	add_action( 'template_redirect', 'turlobinks_add_xhr_location' );
 	add_action( 'wp_enqueue_scripts', 'turlobinks_enqueue_turbolinks', 999 );
+	add_action( 'template_redirect', 'turlobinks_add_location_header' );
 }

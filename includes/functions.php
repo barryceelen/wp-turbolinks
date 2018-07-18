@@ -19,8 +19,8 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since 0.0.1
  */
-function turlobinks_add_xhr_location() {
-	header( "X-XHR-Current-Location: ". turlobinks_self_url() );
+function turlobinks_add_location_header() {
+	header( "Turbolinks-Location: ". turlobinks_self_url() );
 }
 
 /**
